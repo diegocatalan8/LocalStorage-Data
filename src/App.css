@@ -1,38 +1,161 @@
 .App {
-  text-align: center;
+  margin: 0;
+  padding: 0;
+  
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.section-comentario{
+ 
+  width: 100%;
+  height: 100%;
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  align-items: center;
+ 
+  
+}
+
+.section-comentario h2{
+  font-size: 30px;
+  font-weight: 900;
+  
+}
+
+.section-comentario form{
+ 
+  width: 500px;
+  height: 100%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding-left: 220px;
+  padding-bottom: 20px;
+  border-radius: 10px;
+ 
+ 
+ 
+}
+
+.section-comentario label{
+  font-size: 20px;
+  font-weight: 900;
+  margin: 0;
+  margin-top: 15px;
+}
+
+.section-comentario input{
+  width: 60%;
+  height: 30px;
+  margin: 0;
+  margin-top: 15px;
+  
+  border: 1px solid black;
+  border-radius: 5px;
+  padding: 10px;
+  outline: none;
+}
+
+
+/*botones*/
+.section-comentario .botones{
+ 
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 15px;
+  width: 64%;
+  
+}
+
+.section-comentario button{
+  width: 150px;
+  height: 50px;
+  margin: 0 ;
+  margin-top: 25px;
   color: white;
+  font-size: 17px;
+  border: none;
+  
 }
 
-.App-link {
-  color: #61dafb;
+#btn-enviar{
+  background-color: #00b300;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+#btn-borrar{
+  background-color: #ff0000;
+}
+
+.section-comentario button:hover{
+  background-color: rgb(205, 13, 13);
+  color: white;
+  cursor: pointer;
+  box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.7);
+}
+
+/*Estilos para la validacion de formularios*/
+.inputVerde{
+  border: 3px solid green !important;
+  
+}
+
+.inputRojo{
+  border:3px solid red !important;
+}
+
+.mensajeRojo{
+  color: rgb(72, 5, 5);  
+}
+
+.none{
+  display: none;
+}
+
+
+/*tabla de usuarios*/
+.table-container{
+ margin-top: 60px;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.table-container table {
+  
+  width: 50%;
+ 
+}
+
+.table-container table thead {
+  background-color: #25c5c2;
+  color: white;
+  font-size: 20px;
+  font-weight: 900;
+  text-align: center;
+  border-bottom: 1px solid black;
+  
+}
+
+.table-container table thead th {
+  padding: 10px;
+}
+.table-container table tbody tr  td{
+  padding: 10px;
+}
+.table-container table tr{
+ 
+  width: 100%;
+  height: 50px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
 }
